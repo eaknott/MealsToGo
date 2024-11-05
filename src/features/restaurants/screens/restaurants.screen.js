@@ -1,6 +1,7 @@
 import React from 'react';
 import { StatusBar, StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import { Searchbar } from 'react-native-paper';
+import { RestaurantInfoCard } from '../components/restaurant-info-card.component';
 
 export const RestaurantsScreen = () => {
   return (
@@ -9,7 +10,7 @@ export const RestaurantsScreen = () => {
         <Searchbar placeholder='search' />
       </View>
       <View style={styles.list}>
-        <Text style={styles.text}>list</Text>
+        <RestaurantInfoCard />
       </View>
     </SafeAreaView>
   );
@@ -25,7 +26,6 @@ const styles = StyleSheet.create({
   },
   list: {
     flexGrow: 1,
-    backgroundColor: 'blue',
     padding: 16,
   },
   text: {
