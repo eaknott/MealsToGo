@@ -20,6 +20,7 @@ export const restaurantsTransform = ({ results }) => {
       ...restaurant,
       isOpenNow: restaurant.opening_hours && restaurant.opening_hours.open_now,
       isClosedTemporarily: restaurant.business_status === 'CLOSED TEMPORARILY',
+      address: restaurant.vicinity.split(',')[0],
     };
   });
   return camelize(mappedResults);
