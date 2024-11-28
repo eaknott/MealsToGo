@@ -1889,6 +1889,13 @@
   dependencies:
     color "^4.2.3"
 
+"@react-navigation/elements@^2.1.7":
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-2.1.7.tgz#7fef2780ef5056d622456dc364958bcd814b58df"
+  integrity sha512-MFeImIuJrE2D45SNptQitoNUeCmyq8Yt+a7HKvDP4W0g8j9UcF5LCWPae7FjWKbSq8G60o5XTN8MZImaik4vaw==
+  dependencies:
+    color "^4.2.3"
+
 "@react-navigation/native@^7.0.4":
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-7.0.4.tgz#42cfd7acb6cf8263e1f309a9c2a494e3f434cf95"
@@ -1906,6 +1913,14 @@
   integrity sha512-b2ehNmgAfDziTd0EERm0C9JI9JH1kdRS4SNBWbKQOVPv23WG+5ExovwWet26sGtMabLJ5lxSE8Z2/fByfggjNQ==
   dependencies:
     nanoid "3.3.7"
+
+"@react-navigation/stack@^7.0.13":
+  version "7.0.13"
+  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-7.0.13.tgz#01c51040ea4c6cbe14f526bc520abcb95c16d7c7"
+  integrity sha512-ruw4owvI5f4zDHwzAWDA0rh6T1GWmqxLrScfyeDQ5amxacM3dhcfSFQugbnRXoKLZwl6DPaDpk9/qeiBg/0lMg==
+  dependencies:
+    "@react-navigation/elements" "^2.1.7"
+    color "^4.2.3"
 
 "@rnx-kit/chromium-edge-launcher@^1.0.0":
   version "1.0.0"
