@@ -38,19 +38,18 @@ export const MapScreen = () => {
       >
         {restaurants.map((restaurant) => {
           return (
-            <>
-              <Marker
-                key={restaurant.name}
-                title={restaurant.name}
-                coordinate={{
-                  latitude: restaurant.geometry.location.lat,
-                  longitude: restaurant.geometry.location.lng,
-                }}
-              />
+            <Marker
+              key={restaurant.name}
+              title={restaurant.name}
+              coordinate={{
+                latitude: restaurant.geometry.location.lat,
+                longitude: restaurant.geometry.location.lng,
+              }}
+            >
               <Callout>
                 <MapCallout restaurant={restaurant} />
               </Callout>
-            </>
+            </Marker>
           );
         })}
       </Map>
